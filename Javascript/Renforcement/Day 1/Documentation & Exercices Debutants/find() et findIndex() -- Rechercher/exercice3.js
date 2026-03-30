@@ -6,5 +6,10 @@ const catalogue = [
     { ref: 'A05', nom: 'Ciseaux',      prix: 6.30 }, 
 ]; 
 
-const produit = catalogue.find(produit => produit.ref === "A03");
-console.log(produit);
+const produit = catalogue.find(produit=>produit.ref==="A99");
+if (produit) {
+    console.log(" find it");
+}
+else if (!produit) {
+     console.log("can't find it");
+}
